@@ -31,15 +31,6 @@ body {
     display: block;
 }
 
-html {
-    /* background-image: url(./design/mobile-design.jpg); */
-    /* background-image: url("./design/desktop-design.jpg"); */
-}
-
-body {
-    /* display: none; */
-}
-
 /* *** *** *** *** *** MAIN *** *** *** *** *** */
 main {
     display: flex;
@@ -48,7 +39,7 @@ main {
 
 /* *** LEFT SIDE *** */
 .main-left-side {
-    /* background: url(./images/bg-pattern-desktop.svg) no-repeat; */
+    background: url("./images/bg-pattern-desktop.svg");
 
     .base-apparel-logo {
         margin: 65px 0 130px 165px;
@@ -72,7 +63,6 @@ main {
     .site-description {
         margin: 0 180px 0 165px;
         color: var(--desaturatedRed);
-        /* width: 450px; */
         letter-spacing: 0.059px;
         line-height: 28.6px;
     }
@@ -101,13 +91,24 @@ form {
     }
 
     button {
-        height: 53.5px;
+        margin-top: -1px;
+        margin-right: -1px;
+        height: 54.5px;
         width: 140px;
         border-radius: 25px;
         background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         border: none;
         box-shadow: 5px 5px 5px var(--desaturatedRed);
     }
+
+    button:hover {
+        background: linear-gradient(to right, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+    }
+}
+
+form:hover {
+    border: solid 1px var(--softRed);
+
 }
 
 /* *** *** *** *** *** FOOTER *** *** *** *** *** */
@@ -136,6 +137,7 @@ form {
     }
 
     .main-left-side {
+        background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         width: 100vw;
 
         .base-apparel-logo {
@@ -156,7 +158,6 @@ form {
         }
 
         .site-description {
-            /* width: 100vw; */
             font-size: 14px;
             line-height: 1.35rem;
             margin: 0 35px 35px 40px;
@@ -181,7 +182,4 @@ form {
             color: var(--desaturatedRed);
         }
     }
-
-
-
 }
