@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <!-- <div style="opacity: .6; position: absolute; top: 0; left: 0; z-index: -1;">
+    <img src="./design/mobile-design.jpg" alt="" style="width: 100%;">
+  </div> -->
 
-  We're coming soon
+  <main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <div class="main-left-side">
 
-  Email Address
-  
+      <img src="./images/logo.svg" class="base-apparel-logo" alt="Base apparel logo">
+      <img src="./images/hero-mobile.jpg" class="mobile-only" alt="Photo of a lady" />
+
+      <h1>
+        <span>We're</span><br />
+        coming soon
+      </h1>
+
+      <p class="site-description">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form>
+        <input type="email" placeholder="Email Address" />
+        <button><img src="./images/icon-arrow.svg" alt=""></button>
+      </form>
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Edwige08">Edwige</a>.
+      </p>
+
+    </div>
+
+    <div class="main-right-side">
+
+      <img src="./images/hero-desktop.jpg" class="desktop-only" alt="Photo of a lady" />
+
+    </div>
+
+  </main>
+
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <!-- <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Edwige08">Edwige</a>.
+    </p> -->
   </footer>
 </body>
+
 </html>

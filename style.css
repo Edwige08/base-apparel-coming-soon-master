@@ -1,0 +1,187 @@
+/* *** *** *** *** *** GENERAL *** *** *** *** *** */
+:root {
+    --desaturatedRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+    --darkGrayishRed: hsl(0, 6%, 24%);
+
+    --fontSize: 16px;
+
+    --fontFamily: "Josefin Sans", sans-serif;
+
+    --fontWeight-light: 300;
+    --fontWeight-medium: 400;
+    --fontWeight-large: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+body {
+    font-family: var(--fontFamily);
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+html {
+    /* background-image: url(./design/mobile-design.jpg); */
+    /* background-image: url("./design/desktop-design.jpg"); */
+}
+
+body {
+    /* display: none; */
+}
+
+/* *** *** *** *** *** MAIN *** *** *** *** *** */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* *** LEFT SIDE *** */
+.main-left-side {
+    /* background: url(./images/bg-pattern-desktop.svg) no-repeat; */
+
+    .base-apparel-logo {
+        margin: 65px 0 130px 165px;
+    }
+
+    h1 {
+        margin: 0 220px 18.4px 165px;
+        text-transform: uppercase;
+        color: var(--darkGrayishRed);
+        letter-spacing: 15.7px;
+        line-height: 69px;
+        font-size: 65px;
+
+        span {
+            color: var(--desaturatedRed);
+            font-weight: var(--fontWeight-light);
+            letter-spacing: 16.4px;
+        }
+    }
+
+    .site-description {
+        margin: 0 180px 0 165px;
+        color: var(--desaturatedRed);
+        /* width: 450px; */
+        letter-spacing: 0.059px;
+        line-height: 28.6px;
+    }
+}
+
+form {
+    margin: 38px 180px 0 165px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    border: solid 1px var(--desaturatedRed);
+    height: 54px;
+
+    input {
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding-left: 30px;
+        border: none;
+    }
+
+    input::placeholder {
+        color: var(--desaturatedRed);
+        letter-spacing: 1.4px;
+    }
+
+    button {
+        height: 53.5px;
+        width: 140px;
+        border-radius: 25px;
+        background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        box-shadow: 5px 5px 5px var(--desaturatedRed);
+    }
+}
+
+/* *** *** *** *** *** FOOTER *** *** *** *** *** */
+.attribution {
+    margin: 130px 220px 0 165px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--desaturatedRed);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+/* *** *** *** *** *** RESPONSIVE *** *** *** *** *** */
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+@media screen and (max-width: 425px) {
+    .mobile-only {
+        display: flex;
+        width: 100vw;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .main-left-side {
+        width: 100vw;
+
+        .base-apparel-logo {
+            margin: 30px 10px 30px 32px;
+            width: 100px;
+        }
+
+        h1 {
+            margin: 60px 0px 12px 0px;
+            font-size: 2.7rem;
+            letter-spacing: 0.5rem;
+            line-height: 2.75rem;
+            text-align: center;
+
+            span {
+                letter-spacing: 0.6rem;
+            }
+        }
+
+        .site-description {
+            /* width: 100vw; */
+            font-size: 14px;
+            line-height: 1.35rem;
+            margin: 0 35px 35px 40px;
+            text-align: center;
+        }
+
+        form {
+            margin: 0 30px 0px 32px;
+            height: 45px;
+
+            button {
+                height: 100%;
+            }
+
+        }
+
+        .attribution {
+            width: 100%;
+            margin: 60px 0 0 0;
+            font-size: 11px;
+            text-align: center;
+            color: var(--desaturatedRed);
+        }
+    }
+
+
+
+}
